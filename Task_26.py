@@ -5,6 +5,8 @@
 A = 3; B = 5 -> 243 (3⁵)
 A = 2; B = 3 -> 8
 '''
+a = int(input("Введите число: "))
+b = int(input("Введите его степень: "))
 def power(a, b):
     if b == 0:
         return 1
@@ -15,6 +17,4 @@ def power(a, b):
     else:
         return a * power(a, b - 1)
 
-a = int(input("Введите число: "))
-b = int(input("Введите его степень: "))
-print("Результат возведения в степень равен:", power(a, b))
+print("Число A возведенyjt в степень B:", power(a, b))
